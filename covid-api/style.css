@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-size: cover;
+}
+
+p {
+    color: #f9f9f9;
+}
+
+h4 {
+    border-bottom: 3px solid #f9f9f9;
+    font-weight: lighter;
+}
+
+h1.app-name {
+    text-decoration: underline;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.note {
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.search-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar, .search-bar2 {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+.info {
+    display: flex;
+}
+
+
+
+
+
+
+#covid-news, #covid-stats {
+    box-shadow: 2px 2px 2px 3px rgb(255, 255, 255, .5);
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    max-width: 50%;
+    margin: 1em;
+}
+
+#covid-news img {
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    text-decoration: underline;
+}
+
+.skeleton-loading {
+    position: relative;
+    background-color: #2b2929;
+    overflow: hidden;
+}
+
+.skeleton-loading.skeleton-text {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.skeleton-loading.skeleton-text:first-child {
+    width: 100%;
+    height: 50px;
+}
+
+.skeleton-loading.skeleton-text:last-child {
+    margin-bottom: 0;
+    width: 50%;
+    margin: 0 auto;
+    height: 20px;
+}
+
+.skeleton-loading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%);
+    background-image: linear-gradient(to left, transparent, rgb(255, 255, 255, .5), transparent);
+    animation: skeleton-loading 1s infinite;
+}
+
+@keyframes skeleton-loading {
+    100% {
+        transform: translate(100%);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+    
+}
