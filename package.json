@@ -1,0 +1,23 @@
+{
+  "name": "health-news",
+  "version": "1.0.0",
+  "description": "Simple health websites that gives health issue headlines",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salihuabubakar/covid-news-stats-app.git"
+  },
+  "keywords": [
+    "health",
+    "covid"
+  ],
+  "author": "salihu kutiriko abubakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salihuabubakar/covid-news-stats-app/issues"
+  },
+  "homepage": "https://github.com/salihuabubakar/covid-news-stats-app#readme"
+}
