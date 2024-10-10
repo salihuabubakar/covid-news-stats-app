@@ -1,2 +1,2 @@
-# covid-news-stats-app
-An automated covid api app
+# health-news-stats-app
+An automated health api app

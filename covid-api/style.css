@@ -27,6 +27,10 @@ h1.app-name {
     text-align: center;
 }
 
+.list {
+    text-align: center;
+}
+
 .search-boxes {
     display: flex;
     justify-content: center;
@@ -51,7 +55,7 @@ button {
     transition: 0.2s ease-in-out;
 }
 
-input.search-bar, .search-bar2 {
+input.search-bar {
     border: none;
     outline: none;
     padding: 0.4em 1em;
@@ -61,24 +65,31 @@ input.search-bar, .search-bar2 {
     font-family: inherit;
     font-size: 105%;
     width: calc(100% - 100px);
+    text-transform: uppercase;
 }
 
 button:hover {
     background: #7c7c7c6b;
 }
 
+.default {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default p {
+    width: 50%;
+}
+
 .info {
     display: flex;
+    justify-content: center;
 }
 
 
-
-
-
-
-#covid-news, #covid-stats {
-    box-shadow: 2px 2px 2px 3px rgb(255, 255, 255, .5);
-    background: #000000d0;
+#health-news {
     color: white;
     padding: 2em;
     border-radius: 30px;
@@ -86,7 +97,7 @@ button:hover {
     margin: 1em;
 }
 
-#covid-news img {
+img {
     max-width: 50%;
     border-radius: 20px;
 }
@@ -100,6 +111,9 @@ a {
     text-decoration: none;
     color: brown;
     text-decoration: underline;
+    white-space: normal; /* Allows the text to wrap to the next line */
+    word-wrap: break-word; /* Break long words onto the next line */
+
 }
 
 .skeleton-loading {
@@ -146,7 +160,26 @@ a {
     }
 }
 
-@media only screen and (max-width: 425px) {
-    /*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 720px) {
     
+    .default p {
+        width: 100%;
+    }
+
+    #health-news {
+        padding: 5px;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    a {
+        white-space: normal;
+        word-wrap: break-word;
+    
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
 }
